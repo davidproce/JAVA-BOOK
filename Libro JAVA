@@ -1,1 +1,87 @@
 
+public class Libro_JAVA {
+	
+//Creamos nuestro primer Hola mundo en el libro.
+	public static void main (String args[]) {
+		System.out.print("Hola mundo!");
+	
+//Trabajamos con tipos de datos y con tipos de comentarios
+		
+		int edad=35;
+		edad=75;
+		//Comentarios
+		/*Comentarios--------------------------------------
+		  --------------------------------------------
+		 */
+		
+		System.out.println(edad);
+		
+//CONSTANTES	
+		System.out.println("1. Constantes");
+				
+		//ejemplo 1 : Pasar un dato de cm a pulgadas
+				
+			final double apulgadas=2.54;
+						
+			double  cm=6;
+						
+			double resultado=cm/apulgadas;
+						
+			System.out.println("Ejemplo 2 " + "En " + cm + " cm hay " + resultado + " pulgadas");
+			
+//Calculos con Math -- raiz
+			System.out.println("2. Calculos con Math");
+			double raiz=Math.sqrt(9);
+			
+			System.out.println("Resultado raiz " + raiz);
+
+			//Calculos con Math - Redondeo y REFUNDICION
+			
+			System.out.println("Math con  round");
+			
+			double num1=5.85;
+			
+			// int resultado=Math.round; Math.round da un long y eso no es entero.
+			
+			int resultado1=(int)Math.round(num1);
+			
+			// Hago una refundicion al tipo que quiero
+			
+			System.out.println("redondeo " + resultado1);
+			
+		
+//Calculos con Math - pow - exponente
+			
+			double base=5;
+			
+			double exponente=3;
+			
+			int resultado3= (int)Math.pow(base, exponente);
+			
+			System.out.println("Resultado de ejemplo pow - exponente " + resultado3);
+
+// Manipular cadenas
+			System.out.println("3. Manipular cadenas");
+
+			String nombre="Felipe Juan Froilán de Todos los Santos";
+			
+			System.out.println("Mi nombre es " + nombre);
+			
+			System.out.println("Mi nombre tiene " + nombre.length() + " letras.");
+			
+			// Utilizar chartAT para sacar la primera letra
+			
+			System.out.println("La primera letra de mi nombre " + nombre + " es la " + nombre.charAt(0));
+			
+			// Vamos a hacer que nos de la última letra
+			
+			int ultima_letra;
+			
+			ultima_letra=nombre.length();
+			
+			System.out.println("La última letra de " + nombre + " es la " + nombre.charAt(ultima_letra-1));
+
+	}
+
+}
+
